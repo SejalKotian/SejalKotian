@@ -1,0 +1,98 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <title>Your Name — Portfolio</title>
+  <meta name="description" content="Portfolio website of Your Name." />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="container">
+    <nav class="nav">
+      <div class="brand">Your Name</div>
+      <div class="links">
+        <a href="#projects">Projects</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+        <a class="btn" href="resume.pdf" target="_blank" rel="noopener">Resume</a>
+      </div>
+    </nav>
+
+    <section class="hero">
+      <h1>Hi, I’m <span class="accent">Your Name</span>.</h1>
+      <p>
+        I build <b>ML / data / research</b> projects and love working on real-world problems.
+      </p>
+      <div class="hero-actions">
+        <a class="btn" href="#projects">See Projects</a>
+        <a class="btn secondary" href="https://github.com/YOUR_GITHUB_USERNAME" target="_blank" rel="noopener">GitHub</a>
+        <a class="btn secondary" href="https://www.linkedin.com/in/YOUR_LINKEDIN/" target="_blank" rel="noopener">LinkedIn</a>
+      </div>
+    </section>
+  </header>
+
+  <main class="container">
+    <section id="projects" class="section">
+      <h2>Projects</h2>
+      <div class="grid">
+        <a class="card" href="https://github.com/YOUR_GITHUB_USERNAME/PROJECT1" target="_blank" rel="noopener">
+          <h3>Project Title 1</h3>
+          <p>1–2 lines: what you built, impact, tech stack.</p>
+          <div class="tags">
+            <span>Python</span><span>PyTorch</span><span>CV</span>
+          </div>
+        </a>
+
+        <a class="card" href="https://github.com/YOUR_GITHUB_USERNAME/PROJECT2" target="_blank" rel="noopener">
+          <h3>Project Title 2</h3>
+          <p>1–2 lines: key result + what makes it cool.</p>
+          <div class="tags">
+            <span>GNN</span><span>ML</span><span>Research</span>
+          </div>
+        </a>
+
+        <a class="card" href="https://github.com/YOUR_GITHUB_USERNAME/PROJECT3" target="_blank" rel="noopener">
+          <h3>Project Title 3</h3>
+          <p>1–2 lines: what you did + outcome.</p>
+          <div class="tags">
+            <span>SQL</span><span>Analytics</span><span>Cloud</span>
+          </div>
+        </a>
+      </div>
+    </section>
+
+    <section id="about" class="section">
+      <h2>About</h2>
+      <p>
+        Write 4–6 lines about your background, interests, and what roles you want.
+        Mention your strongest areas (e.g., ML, optimization, CV, scientific computing).
+      </p>
+      <ul class="bullets">
+        <li><b>Skills:</b> Python, PyTorch, SQL, ML, CV, Optimization, …</li>
+        <li><b>Focus:</b> Graph Neural Networks, scientific computing, applied ML</li>
+        <li><b>Currently:</b> Looking for internships / research opportunities</li>
+      </ul>
+    </section>
+
+    <section id="contact" class="section">
+      <h2>Contact</h2>
+      <p>
+        Email me at <a href="mailto:your.email@example.com">your.email@example.com</a>
+        or DM me on <a href="https://www.linkedin.com/in/YOUR_LINKEDIN/" target="_blank" rel="noopener">LinkedIn</a>.
+      </p>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-inner">
+      <span>© <span id="year"></span> Your Name</span>
+      <span class="muted">Built with GitHub Pages</span>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
